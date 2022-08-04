@@ -7,11 +7,11 @@ public class SnakeTail : MonoBehaviour
     [SerializeField] private Transform SnakeHead;
     [SerializeField] private float CircleDiameter;
 
-    private readonly List<Transform> snakeCircles = new();
-    private readonly List<Vector3> positions = new();
+    [SerializeField] private List<Transform> snakeCircles = new();
+    [SerializeField] private List<Vector3> positions = new();
 
-   [SerializeField] private int Length = 1;
-   [SerializeField] private Text _text;
+    [SerializeField] private int Length = 1;
+    [SerializeField] private Text _text;
 
 
     private void Awake()
@@ -19,7 +19,7 @@ public class SnakeTail : MonoBehaviour
         positions.Add(SnakeHead.position);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         float distance = (SnakeHead.position - positions[0]).magnitude;
 
@@ -44,12 +44,6 @@ public class SnakeTail : MonoBehaviour
             AddCircle();
             _text.text = Length.ToString();
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Length--;
-            RemoveCircle();
-            _text.text = Length.ToString();
-        }
 
     }
 
@@ -60,10 +54,18 @@ public class SnakeTail : MonoBehaviour
         positions.Add(circle.position);
     }
 
-    private void RemoveCircle()
+    private void OnTriggerEnter(Collider other)
     {
-        Destroy(snakeCircles[0].gameObject);
-        snakeCircles.RemoveAt(0);
-        positions.RemoveAt(1);
+        if (CompareTag("Player"))
+        {
+            Destroy(snakeCircles[0].gameObject);
+            snakeCircles.RemoveAt(0);
+            positions.RemoveAt(1);
+
+            Length--;
+            _text.text = Length.ToString();
+
+            Debug.Log("задел");
+        }
     }
 }

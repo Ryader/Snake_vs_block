@@ -6,7 +6,7 @@ public class MoveV2 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Translate(0, 0, 20 * Time.deltaTime);
+        transform.Translate(0, 0, 10 * Time.deltaTime);
 
         horzinotal = Input.GetAxis("Horizontal");
         transform.Translate(30 * horzinotal * Time.deltaTime * Vector3.right);
