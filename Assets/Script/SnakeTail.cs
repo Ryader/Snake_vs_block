@@ -12,6 +12,12 @@ public class SnakeTail : MonoBehaviour
     [SerializeField] private GameObject losePanel;
 
 
+    [SerializeField] private AudioClip _audio;
+    [SerializeField] private AudioClip _audioScore;
+    [SerializeField] private AudioClip _audioD;
+    [SerializeField] private AudioClip _audioV;
+    [SerializeField] private new AudioSource audio;
+
     private void Awake()
     {
         length = 1;
@@ -20,13 +26,6 @@ public class SnakeTail : MonoBehaviour
 
     private void Update()
     {
-
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            length++;
-            _text.text = length.ToString();
-        }
 
 
         //Управление
@@ -58,16 +57,37 @@ public class SnakeTail : MonoBehaviour
     }
 
 
-
     //Получение урона 
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (CompareTag("Player"))
+        if (other.gameObject.CompareTag("Box"))
         {
+            audio.PlayOneShot(_audio);
             length--;
             _text.text = length.ToString();
             Debug.Log("задел");
+        }
+
+        if (other.gameObject.CompareTag("Eat"))
+        {
+            audio.PlayOneShot(_audioScore);
+            length++;
+            _text.text = length.ToString();
+            Debug.Log("Скушал");
+        }
+
+    }
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            transform.Translate(0, 0, 0 * Time.deltaTime);
+            audio.PlayOneShot(_audioV);
+            victoryPanel.SetActive(true);
+            Debug.Log("Победа");
         }
     }
 }

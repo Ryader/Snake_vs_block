@@ -6,10 +6,15 @@ public class HPBlock : MonoBehaviour
 {
     public int HP;
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
 
         if (CompareTag("Box"))
+        {
+            HP--;
+        }
+
+        if (CompareTag("Eat"))
         {
             HP--;
         }
