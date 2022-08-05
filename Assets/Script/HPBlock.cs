@@ -6,14 +6,12 @@ public class HPBlock : MonoBehaviour
 {
     public int HP;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
 
-        if (CompareTag("Player"))
+        if (CompareTag("Box"))
         {
             HP--;
-
-            Debug.Log("Задел блок");
         }
 
         if (HP == 0)
