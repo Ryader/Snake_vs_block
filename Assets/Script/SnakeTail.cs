@@ -1,16 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
 public class SnakeTail : MonoBehaviour
 {
     private float horzinotal;
     [SerializeField] private GameObject snake;
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private int length = 1;
+    [SerializeField] public int length;
     [SerializeField] private Text _text;
     [SerializeField] private GameObject victoryPanel;
     [SerializeField] private GameObject losePanel;
-
 
     [SerializeField] private AudioClip _audio;
     [SerializeField] private AudioClip _audioScore;
@@ -27,7 +25,7 @@ public class SnakeTail : MonoBehaviour
     private void Update()
     {
 
-
+        _text.text = length.ToString();
         //Управление
         if (length >= 1)
         {
@@ -59,25 +57,6 @@ public class SnakeTail : MonoBehaviour
 
     //Получение урона 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Box"))
-        {
-            audio.PlayOneShot(_audio);
-            length--;
-            _text.text = length.ToString();
-            Debug.Log("задел");
-        }
-
-        if (other.gameObject.CompareTag("Eat"))
-        {
-            audio.PlayOneShot(_audioScore);
-            length++;
-            _text.text = length.ToString();
-            Debug.Log("Скушал");
-        }
-
-    }
 
 
     private void OnCollisionEnter(Collision collision)
@@ -88,6 +67,16 @@ public class SnakeTail : MonoBehaviour
             audio.PlayOneShot(_audioV);
             victoryPanel.SetActive(true);
             Debug.Log("Победа");
+        }
+
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            audio.PlayOneShot(_audio);
+        }
+
+        if (collision.gameObject.CompareTag("Eat"))
+        {
+            audio.PlayOneShot(_audioScore);
         }
     }
 }

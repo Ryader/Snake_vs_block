@@ -1,28 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HPBlock : MonoBehaviour
 {
     public int HP;
+    public SnakeTail _snake;
 
-    private void OnTriggerEnter(Collider other)
+    private void Update()
     {
-
-        if (CompareTag("Box"))
-        {
-            HP--;
-        }
-
-        if (CompareTag("Eat"))
-        {
-            HP--;
-        }
-
-        if (HP == 0)
+        if (HP <= 0)
         {
             Destroy(gameObject);
         }
     }
- 
+
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        if (gameObject.CompareTag("Box"))
+        {
+            _snake.length -= HP;
+        }
+
+        if (gameObject.CompareTag("Eat"))
+        {
+            _snake.length += HP;
+        }
+
+        HP = 0;
+    }
 }
