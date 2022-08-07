@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class HPBlock : MonoBehaviour
+internal class HPBlock : MonoBehaviour
 {
-    public int HP;
-    public SnakeTail _snake;
+    [SerializeField] private int HP;
+    [SerializeField] private SnakeTail _snake;
 
     private void Update()
     {
@@ -18,12 +18,13 @@ public class HPBlock : MonoBehaviour
 
         if (gameObject.CompareTag("Box"))
         {
-            _snake.length -= HP;
+            _snake.lengthSnake -= HP;
         }
 
         if (gameObject.CompareTag("Eat"))
         {
-            _snake.length += HP;
+            _snake.record += HP;
+            _snake.lengthSnake += HP;
         }
 
         HP = 0;

@@ -1,38 +1,68 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-public class SnakeTail : MonoBehaviour
+internal class SnakeTail : MonoBehaviour
 {
+
     private float horzinotal;
-    [SerializeField] private GameObject snake;
+    [Header("Персонаж")]
+    [SerializeField] private GameObject snakePlayer;
     [SerializeField] private Rigidbody rb;
-    [SerializeField] public int length;
+    [SerializeField] internal int lengthSnake;
+    [SerializeField] private int speed;
+    [SerializeField] private int speedTurn;
+    [Header("UI Элементы")]
     [SerializeField] private Text _text;
+    [SerializeField] private Text textRecord;
+    [SerializeField] internal int record;
     [SerializeField] private GameObject victoryPanel;
     [SerializeField] private GameObject losePanel;
-
-    [SerializeField] private AudioClip _audio;
-    [SerializeField] private AudioClip _audioScore;
-    [SerializeField] private AudioClip _audioD;
-    [SerializeField] private AudioClip _audioV;
-    [SerializeField] private new AudioSource audio;
+    [Header("Звук")]
+    [SerializeField] private SoundSystem _sound;
 
     private void Awake()
     {
-        length = 1;
-        _text.text = length.ToString();
+        lengthSnake = 1;
+        _text.text = lengthSnake.ToString();
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            speed = 0;
+            speedTurn = 0;
+
+            _sound.Victory();
+            victoryPanel.SetActive(true);
+            Debug.Log("Победа");
+        }
+
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            _sound.Hit();
+        }
+
+        if (collision.gameObject.CompareTag("Eat"))
+        {
+            _sound.Score();
+
+        }
+
     }
 
     private void Update()
     {
-
-        _text.text = length.ToString();
+        textRecord.text = record.ToString();
+        _text.text = lengthSnake.ToString();
+        Debug.Log(textRecord);
         //Управление
-        if (length >= 1)
+        if (lengthSnake >= 1)
         {
-            transform.Translate(0, 0, 10 * Time.deltaTime);
+            transform.Translate(0, 0, speed * Time.deltaTime);
 
             horzinotal = Input.GetAxis("Horizontal");
-            transform.Translate(30 * horzinotal * Time.deltaTime * Vector3.right);
+            transform.Translate(speedTurn * horzinotal * Time.deltaTime * Vector3.right);
 
             if (transform.position.x < -10)
             {
@@ -44,39 +74,15 @@ public class SnakeTail : MonoBehaviour
                 transform.position = new Vector3(10, transform.position.y, transform.position.z);
             }
         }
-        //смерть
-        else if (length <= 0)
+        
+        if (lengthSnake <= 0)
         {
-            transform.Translate(0, 0, 0 * Time.deltaTime);
-            Destroy(snake);
+            speed = 0;
+            speedTurn = 0;
+            Destroy(snakePlayer);
             _text.gameObject.SetActive(false);
             losePanel.SetActive(true);
-        }
-    }
-
-
-    //Получение урона 
-
-
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Finish"))
-        {
-            transform.Translate(0, 0, 0 * Time.deltaTime);
-            audio.PlayOneShot(_audioV);
-            victoryPanel.SetActive(true);
-            Debug.Log("Победа");
-        }
-
-        if (collision.gameObject.CompareTag("Box"))
-        {
-            audio.PlayOneShot(_audio);
-        }
-
-        if (collision.gameObject.CompareTag("Eat"))
-        {
-            audio.PlayOneShot(_audioScore);
+            _sound.Dead();
         }
     }
 }
