@@ -7,8 +7,6 @@ internal class UISystem : MonoBehaviour
     [SerializeField] private SnakeTail labelRecord;
     [SerializeField] internal int _numberRecord;
 
-
-
     private void Update()
     {
         _numberRecord = labelRecord._record;
