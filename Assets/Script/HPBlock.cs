@@ -17,9 +17,9 @@ internal class HPBlock : MonoBehaviour
     [SerializeField] private Renderer blockRender;
     [SerializeField] private MaterialPropertyBlock blockMaterial;
 
-
-    private void Start()
+    private void Awake()
     {
+        _hp = Random.Range(1, 20);
         _hpF = _hp;
         blockMaterial = new MaterialPropertyBlock();
         blockRender = GetComponent<Renderer>();

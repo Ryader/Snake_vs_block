@@ -42,7 +42,7 @@ internal class SnakeTail : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-
+        //Тригеры
         if (collision.gameObject.CompareTag("Finish"))
         {
             speed = 0;

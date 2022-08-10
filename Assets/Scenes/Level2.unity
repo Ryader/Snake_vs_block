@@ -176,9 +176,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: _hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _ballCount
       value: 
@@ -287,6 +299,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -294,6 +310,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 69385322}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -637,9 +657,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: _hp
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _ballCount
       value: 
@@ -5466,13 +5498,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154359448}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 8.68, y: 9.48, z: 96.74}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2.1520357, y: -4.935791, z: 127.857056}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 780947389}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &155939194
 GameObject:
@@ -5549,7 +5581,7 @@ Transform:
   - {fileID: 2015167755}
   - {fileID: 524050571}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &157348671
 PrefabInstance:
@@ -5564,6 +5596,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -5571,6 +5607,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802414118990}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -5648,6 +5688,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -5655,6 +5699,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802470531780}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -5723,6 +5771,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -5730,6 +5782,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802481471526}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -5802,6 +5858,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -5809,6 +5869,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802510073999}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -6017,6 +6081,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -6024,6 +6092,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802272894799}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -6092,6 +6164,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -6099,6 +6175,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802276808909}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -6305,6 +6385,10 @@ PrefabInstance:
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -6312,6 +6396,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802335431355}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -6403,17 +6491,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d26f5450914524f4faacfce7e373bd83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snakeLenght: {fileID: 413438009}
   snakePlayer: {fileID: 1622683407287485164}
   rb: {fileID: 413438007}
-  lengthSnake: 0
   speed: 10
   speedTurn: 30
-  _snakeLenght: {fileID: 413438009}
+  _lengthSnake: 0
   _text: {fileID: 1498795976}
   textRecord: {fileID: 38455945}
-  record: 0
   victoryPanel: {fileID: 1193789455}
   losePanel: {fileID: 1030263540}
+  _record: 0
   particle1: {fileID: 514660571}
   particle2: {fileID: 154359450}
   _sound: {fileID: 1557902410}
@@ -6432,7 +6520,7 @@ Transform:
   - {fileID: 1622683407287485165}
   - {fileID: 963194228}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &413438007
 Rigidbody:
@@ -6477,8 +6565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SnakeHead: {fileID: 1622683407287485165}
   CircleDiameter: 1.3
-  snakeCircles: []
-  positions: []
+  _snakeCircles: []
+  _positions: []
 --- !u!1001 &440083916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6492,6 +6580,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -6499,6 +6591,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802159894205}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -6571,6 +6667,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -6578,6 +6678,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802167712960}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -6650,6 +6754,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -6657,6 +6765,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 488928394}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -6745,6 +6857,10 @@ PrefabInstance:
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -6752,6 +6868,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 492533186}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -6840,6 +6960,10 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -6847,6 +6971,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802221845841}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -11712,13 +11840,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514660569}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -8.07, y: 9.48, z: 96.74}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -14.597964, y: -4.935791, z: 127.857056}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 780947389}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &524050570
 PrefabInstance:
@@ -11733,6 +11861,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -11740,6 +11872,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 524050572}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -11832,6 +11968,10 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -11839,6 +11979,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803113602368}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -11907,6 +12051,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -11914,6 +12062,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 651799992}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -12104,6 +12256,45 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &780947388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 780947389}
+  m_Layer: 0
+  m_Name: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &780947389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780947388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.5279646, y: 14.415791, z: -31.117062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1877482692}
+  - {fileID: 1755984917}
+  - {fileID: 1845349271}
+  - {fileID: 1696342654}
+  - {fileID: 1557902411}
+  - {fileID: 828413724}
+  - {fileID: 514660572}
+  - {fileID: 154359451}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &823389899
 GameObject:
   m_ObjectHideFlags: 0
@@ -12142,7 +12333,7 @@ RectTransform:
   - {fileID: 1193789456}
   - {fileID: 1030263541}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12238,8 +12429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textRecord: {fileID: 106012959}
-  numberRecord: 0
   labelRecord: {fileID: 413438004}
+  _numberRecord: 0
 --- !u!1 &828413720
 GameObject:
   m_ObjectHideFlags: 0
@@ -12330,12 +12521,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828413720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: -100.18}
+  m_LocalPosition: {x: -6.5279646, y: -10.915791, z: -69.06294}
   m_LocalScale: {x: 22, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 780947389}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &860545111
 PrefabInstance:
@@ -12346,6 +12537,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -12353,6 +12548,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802848889638}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -12539,6 +12738,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -12546,6 +12749,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078802696602450}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -12614,6 +12821,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -12621,6 +12832,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 1017783884}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -12751,7 +12966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12798,6 +13013,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -12805,6 +13024,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803645879424}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -13054,7 +13277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -13131,9 +13354,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: _hp
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _ballCount
       value: 
@@ -13166,6 +13401,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -13173,6 +13412,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803534102254}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -13380,6 +13623,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -13387,6 +13634,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803569221890}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -13459,6 +13710,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -13466,6 +13721,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803333522091}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -13538,6 +13797,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -13545,6 +13808,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803397218015}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -13617,6 +13884,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -13624,6 +13895,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803425281254}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -13706,6 +13981,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -13713,6 +13992,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803206780765}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -13865,6 +14148,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -13872,6 +14159,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803254084053}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -14069,13 +14360,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557902408}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.5279646, y: -14.415791, z: 31.117062}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 780947389}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1596303625
 GameObject:
@@ -14167,6 +14458,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -14174,6 +14469,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078804145494787}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -14246,6 +14545,10 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -14253,6 +14556,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 1625956640}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -14341,6 +14648,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -14348,6 +14659,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 1637842643}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -14579,13 +14894,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696342650}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 8.47, z: 100.6847}
-  m_LocalScale: {x: 3.4393592, y: 10, z: 20.492}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -6.5279646, y: -5.9457903, z: 131.80176}
+  m_LocalScale: {x: 3.4393594, y: 10, z: 20.491999}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 780947389}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1703471336
 PrefabInstance:
@@ -14600,6 +14915,10 @@ PrefabInstance:
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -14607,6 +14926,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078804228682649}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -14719,9 +15042,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: _hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _ballCount
       value: 
@@ -14754,6 +15089,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -14761,6 +15100,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078804252276092}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -14991,12 +15334,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755984913}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.5, y: 4.5, z: 0}
+  m_LocalPosition: {x: 3.9720354, y: -9.915791, z: 31.117062}
   m_LocalScale: {x: 0.99, y: 1, z: 200}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 780947389}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1782063765
 PrefabInstance:
@@ -15007,6 +15350,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -15014,6 +15361,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078804038875620}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -15086,6 +15437,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -15093,6 +15448,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078804088013399}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -15242,12 +15601,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845349267}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.5, y: 4.5, z: 0}
+  m_LocalPosition: {x: -17.027966, y: -9.915791, z: 31.117062}
   m_LocalScale: {x: 0.99, y: 1, z: 200}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 780947389}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1877482688
 GameObject:
@@ -15338,13 +15697,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877482688}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5002, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.5279646, y: -10.91559, z: 31.117062}
   m_LocalScale: {x: 20.387106, y: 1, z: 200}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 780947389}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1890871010
 PrefabInstance:
@@ -15359,6 +15718,10 @@ PrefabInstance:
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -15366,6 +15729,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803878690195}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -15438,6 +15805,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -15445,6 +15816,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803891508241}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -15517,6 +15892,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -15524,6 +15903,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 1908015807}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -15612,6 +15995,10 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -15619,6 +16006,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 118078803997604115}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -15687,6 +16078,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 155939195}
     m_Modifications:
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
@@ -15694,6 +16089,10 @@ PrefabInstance:
       propertyPath: textPro
       value: 
       objectReference: {fileID: 2015167756}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
@@ -15822,9 +16221,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: _hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _ballCount
       value: 
@@ -16698,9 +17109,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: _hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
+    - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 4982274485436347954, guid: be5e4a29c58b4a945b48ced83f84e7fb, type: 3}
       propertyPath: _ballCount
       value: 
@@ -16739,9 +17162,17 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: snake
+      value: 
+      objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _snake
       value: 
       objectReference: {fileID: 413438004}
+    - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
+      propertyPath: ballCount
+      value: 
+      objectReference: {fileID: 413438009}
     - target: {fileID: 5681234332143012771, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
       propertyPath: _ballCount
       value: 
