@@ -1,16 +1,46 @@
+using TMPro;
 using UnityEngine;
+
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(BoxCollider))]
 
 internal class HPBlock : MonoBehaviour
 {
-    [SerializeField] private int HP;
-    [SerializeField] private SnakeTail _snake;
+    [SerializeField] internal int _hp;
+    [SerializeField] internal float _hpF;
+    [SerializeField] private SnakeTail snake;
+    [SerializeField] private TextMeshPro textPro;
+    [SerializeField] private SnakeLenght ballCount;
 
-    private void Update()
+    [Header("Подключение шейдера")]
+
+    [SerializeField] private Renderer blockRender;
+    [SerializeField] private MaterialPropertyBlock blockMaterial;
+
+
+    private void Start()
     {
-        if (HP <= 0)
+        _hpF = _hp;
+        blockMaterial = new MaterialPropertyBlock();
+        blockRender = GetComponent<Renderer>();
+    }
+    private void FixedUpdate()
+    {
+        textPro.text = _hp.ToString();
+
+        if (_hp <= 0)
         {
             Destroy(gameObject);
         }
+
+        if (CompareTag("Box"))
+        {
+            blockRender.GetPropertyBlock(blockMaterial);
+            blockMaterial.SetFloat("_Float", _hpF / 50f);
+            blockRender.SetPropertyBlock(blockMaterial);
+
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -18,15 +48,30 @@ internal class HPBlock : MonoBehaviour
 
         if (gameObject.CompareTag("Box"))
         {
-            _snake.lengthSnake -= HP;
+
+            if (snake._lengthSnake <= _hp)
+            {
+                snake.Dead();
+            }
+
+            for (int i = 0; i < _hp; i++)
+            {
+                ballCount.RemoveCircle();
+                snake._lengthSnake--;
+            }
+
         }
 
         if (gameObject.CompareTag("Eat"))
         {
-            _snake.record += HP;
-            _snake.lengthSnake += HP;
+            snake._record += _hp;
+            snake._lengthSnake += _hp;
+            for (int i = 0; i < _hp; i++)
+            {
+                ballCount.AddCircle();
+            }
         }
 
-        HP = 0;
+        _hp = 0;
     }
 }
