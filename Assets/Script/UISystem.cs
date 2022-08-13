@@ -2,16 +2,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using NTC.Global.Cache;
 
-internal class UISystem : NightCache , INightRun
+internal class UISystem : NightCache
 {
     [SerializeField] private Text textRecord;
     [SerializeField] private SnakeTail labelRecord;
-    [SerializeField] internal int _numberRecord;
-
-
-    public void Run()
+    [SerializeField] private int numberRecord;
+    public int NumberRecord
     {
-        _numberRecord = labelRecord._record;
-        textRecord.text = _numberRecord.ToString();
+        get
+        {
+            return numberRecord;
+        }
+        set
+        {
+            numberRecord = value;
+
+            numberRecord = labelRecord._record;
+            textRecord.text = numberRecord.ToString();
+        }
     }
 }

@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using NTC.Global.Cache;
 using UnityEngine;
 
-internal class SnakeLenght : MonoBehaviour
+
+internal class SnakeLenght : NightCache , INightInit
 {
     [SerializeField] private Transform SnakeHead;
     [SerializeField] private float CircleDiameter;
@@ -9,7 +11,8 @@ internal class SnakeLenght : MonoBehaviour
     [SerializeField] internal List<Transform> _snakeCircles = new();
     [SerializeField] internal List<Vector3> _positions = new();
 
-    private void Awake()
+
+    public void Init()
     {
         _positions.Add(SnakeHead.position);
     }
