@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using NTC.Global.Cache;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(SphereCollider))]
 
-internal class SnakeTail : MonoBehaviour
+internal class SnakeTail : NightCache , INightRun, INightInit
 {
 
     private float horzinotal;
@@ -30,7 +31,8 @@ internal class SnakeTail : MonoBehaviour
     [Header("Звук")]
     [SerializeField] private SoundSystem _sound;
 
-    private void Awake()
+
+    public void Init()
     {
         snakeLenght.GetComponent<SnakeLenght>();
         _lengthSnake = 1;
@@ -40,33 +42,7 @@ internal class SnakeTail : MonoBehaviour
         particle2.Stop();
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        //Тригеры
-        if (collision.gameObject.CompareTag("Finish"))
-        {
-            speed = 0;
-            speedTurn = 0;
-
-            _sound.Victory();
-            victoryPanel.SetActive(true);
-
-            particle1.Play();
-            particle2.Play();
-        }
-
-        if (collision.gameObject.CompareTag("Box"))
-        {
-            _sound.Hit();
-        }
-
-        if (collision.gameObject.CompareTag("Eat"))
-        {
-            _sound.Score();
-        }
-    }
-
-    private void Update()
+    public void Run()
     {
 
         textRecord.text = _record.ToString();
@@ -99,6 +75,33 @@ internal class SnakeTail : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        //Тригеры
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            speed = 0;
+            speedTurn = 0;
+
+            _sound.Victory();
+            victoryPanel.SetActive(true);
+
+            particle1.Play();
+            particle2.Play();
+        }
+
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            _sound.Hit();
+        }
+
+        if (collision.gameObject.CompareTag("Eat"))
+        {
+            _sound.Score();
+        }
+    }
+
+
     internal void Dead()
     {
         speed = 0;
@@ -108,4 +111,6 @@ internal class SnakeTail : MonoBehaviour
         losePanel.SetActive(true);
         _sound.Dead();
     }
+
+   
 }

@@ -14,7 +14,7 @@ public class Dead : MonoBehaviour
     [SerializeField] private int Length = 1;
     [SerializeField] private Text _text;
 
-    private void Update()
+    internal void DeadUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {

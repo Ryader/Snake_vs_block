@@ -6700,6 +6700,7 @@ GameObject:
   - component: {fileID: 413438007}
   - component: {fileID: 413438009}
   - component: {fileID: 413438008}
+  - component: {fileID: 413438010}
   m_Layer: 0
   m_Name: Sytem
   m_TagString: Player
@@ -6795,6 +6796,18 @@ MonoBehaviour:
   CircleDiameter: 1.3
   _snakeCircles: []
   _positions: []
+--- !u!114 &413438010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413438003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287e88db736f451198df6c2f621b2885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &422456566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5681234332143012782, guid: 5e64d3a30eb09e64c90a21093376a224, type: 3}
@@ -12252,6 +12265,7 @@ GameObject:
   - component: {fileID: 823389905}
   - component: {fileID: 823389901}
   - component: {fileID: 823389904}
+  - component: {fileID: 823389906}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -12374,6 +12388,18 @@ MonoBehaviour:
   textRecord: {fileID: 106012959}
   labelRecord: {fileID: 413438004}
   _numberRecord: 0
+--- !u!114 &823389906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823389899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287e88db736f451198df6c2f621b2885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &828413720
 GameObject:
   m_ObjectHideFlags: 0
@@ -13820,6 +13846,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286681814}
   m_CullTransparentMesh: 1
+--- !u!1 &1287249671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1287249673}
+  - component: {fileID: 1287249672}
+  m_Layer: 0
+  m_Name: Night cache entry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1287249672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287249671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860c504728944d91a68f9fb1a7a53276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1287249673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287249671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4957027, y: -52.068546, z: 18.24665}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1312455283
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,10 +1,11 @@
 using TMPro;
 using UnityEngine;
+using NTC.Global.Cache;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(BoxCollider))]
 
-internal class HPBlock : MonoBehaviour
+internal class HPBlock : NightCache , INightRun
 {
     [SerializeField] internal int _hp;
     [SerializeField] internal float _hpF;
@@ -17,14 +18,7 @@ internal class HPBlock : MonoBehaviour
     [SerializeField] private Renderer blockRender;
     [SerializeField] private MaterialPropertyBlock blockMaterial;
 
-    private void Awake()
-    {
-        _hp = Random.Range(1, 20);
-        _hpF = _hp;
-        blockMaterial = new MaterialPropertyBlock();
-        blockRender = GetComponent<Renderer>();
-    }
-    private void FixedUpdate()
+    public void Run()
     {
         textPro.text = _hp.ToString();
 
@@ -40,7 +34,14 @@ internal class HPBlock : MonoBehaviour
             blockRender.SetPropertyBlock(blockMaterial);
 
         }
+    }
 
+    private void Awake()
+    {
+        _hp = Random.Range(1, 20);
+        _hpF = _hp;
+        blockMaterial = new MaterialPropertyBlock();
+        blockRender = GetComponent<Renderer>();
     }
 
     private void OnCollisionEnter(Collision collision)
